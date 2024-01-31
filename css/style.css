@@ -177,6 +177,28 @@ section a {
   text-decoration: dashed underline var(--third-color);
 }
 
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+article aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+article i {
+  font-size: 2rem;
+}
+
+article i:hover,
+article i:focus {
+  color: var(--third-color);
+}
+
 .contact-links ul {
   display: flex;
   justify-content: center;
@@ -245,6 +267,18 @@ footer span {
     gap: 2rem;
   }
 
+  article {
+    gap: 2rem;
+  }
+
+  article aside {
+    gap: 2rem;
+  }
+
+  article i {
+    font-size: 2.5rem;
+  }
+
   .contact-links ul {
     font-size: 4rem;
     gap: 2rem;
@@ -290,6 +324,21 @@ footer span {
   section {
     margin: 3rem 0;
     gap: 3rem;
+  }
+
+  article {
+    gap: 3rem;
+  }
+
+  article aside {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  article i {
+    font-size: 3rem;
   }
 
   .contact-links ul {
