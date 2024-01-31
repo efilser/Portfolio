@@ -99,7 +99,7 @@ h4 {
 
 p {
   font-size: 1rem;
-  line-height: 20px;
+  line-height: 23px;
 }
 
 header {
@@ -312,6 +312,10 @@ footer span {
     font-size: 1.75rem;
   }
 
+  p {
+    text-align: left;
+  }
+
   header {
     margin: 3rem;
     gap: 3rem;
@@ -328,6 +332,7 @@ footer span {
 
   article {
     gap: 3rem;
+    align-items: start;
   }
 
   article aside {
