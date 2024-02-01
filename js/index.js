@@ -1,7 +1,7 @@
 const portfolio = document.getElementsByClassName('container')[0];
 
 // Chargez les données du fichier JSON de manière asynchrone
-fetch('../assets/datas/projects.json')
+fetch('../assets/datas/projects.js')
   .then(response => response.json())
   .then(projects => {
     // Créez dynamiquement les éléments HTML pour chaque projet
