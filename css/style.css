@@ -177,6 +177,12 @@ section a {
   text-decoration: dashed underline var(--third-color);
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -267,6 +273,10 @@ footer span {
     gap: 2rem;
   }
 
+  .container {
+    gap: 2rem;
+  }
+
   article {
     gap: 2rem;
   }
@@ -313,7 +323,7 @@ footer span {
   }
 
   p {
-    text-align: left;
+    text-align: justify;
   }
 
   header {
@@ -330,9 +340,18 @@ footer span {
     gap: 3rem;
   }
 
+  .container {
+    gap: 3rem;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
   article {
     gap: 3rem;
     align-items: start;
+    justify-content: space-between;
+    flex-basis: 45%;
   }
 
   article aside {

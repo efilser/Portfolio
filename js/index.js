@@ -1,4 +1,4 @@
-const portfolioSection = document.getElementById('portfolio');
+const portfolio = document.getElementsByClassName('container')[0];
 
 // Chargez les données du fichier JSON de manière asynchrone
 fetch('../assets/datas/projects.json')
@@ -19,6 +19,6 @@ fetch('../assets/datas/projects.json')
       article.appendChild(description);
       article.appendChild(aside);
 
-      portfolioSection.appendChild(article);
+      portfolio.appendChild(article);
     });
   });
