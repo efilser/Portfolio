@@ -3,7 +3,7 @@ const portfolio = document.getElementsByClassName('container')[0];
 // Chargez les données du fichier JSON de manière asynchrone
 fetch('assets/datas/projects.json')
 
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
     // Créez dynamiquement les éléments HTML pour chaque projet
     data.projects.forEach(project => {
@@ -11,10 +11,29 @@ fetch('assets/datas/projects.json')
       const name = document.createElement('h4');
       const description = document.createElement('p');
       const aside = document.createElement('aside');
+      const skillsList = document.createElement('ul');
+      const githubLink = document.createElement('a');
+      const githubIcon = document.createElement('i');
 
       name.textContent = project.name;
       description.textContent = project.description;
-      aside.innerHTML = `<p>${project.skills.join(', ')}</p><a href="${project.link}" target="_blank" aria-label="Repo GitHub ${project.name}"><i class="fa-brands fa-github"></i></a>`;
+      skillsList.className = `skills${project.id}`;
+
+      project.skills.forEach(skill => {
+        const skillItem = document.createElement('li');
+        skillItem.textContent = skill;
+        skillsList.appendChild(skillItem);
+      });
+      githubLink.href = project.link;
+      githubLink.target = '_blank';
+      githubLink.rel = 'noopener noreferrer';
+      githubLink.ariaLabel = 'Repo GitHub ' + project.name;
+      githubIcon.className = 'fa-brands fa-github';
+
+      githubLink.appendChild(githubIcon);
+
+      aside.appendChild(skillsList);
+      aside.appendChild(githubLink);
 
       article.appendChild(name);
       article.appendChild(description);

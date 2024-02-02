@@ -4,7 +4,7 @@
       "id": 0,
       "name": "Oh My Food",
       "description": "Quatrième projet du parcours. Je joue le rôle d'un développeur junior au sein d'une jeune startup qui voudrais s'imposer sur le marché de la restauration. Ma mission est de développer un site responsive en mobile first qui répertorie les menus de restaurants gastronomiques. L'UX designer à mis a disposition les maquettes mobile et desktop sur Figma. Je dois également intégrer un loader ainsi que des animations pour la mise en favoris et le sélecteur de plat.",
-      "skills": ["HTML", "CSS", "Animations", "Mobile First", "GitHub"],
+      "skills": ["HTML", "CSS", "Animations", "Responsive", "GitHub"],
       "link": "https://github.com/efilser/Ohmyfood"
     },
   
